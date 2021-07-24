@@ -21,7 +21,9 @@ public class App {
         // Using Spring Bean
         ApplicationContext context = new ClassPathXmlApplicationContext("com/example/telusko/config.xml");
 
-        Vehicle obj = (Vehicle) context.getBean("vehicle");
+        Vehicle obj = (Vehicle) context.getBean("vehicle1");
+        Vehicle obj2 = (Vehicle) context.getBean("vehicle2");
         obj.drive();
+        obj2.drive();
     }
 }
