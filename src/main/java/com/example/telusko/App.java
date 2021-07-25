@@ -27,7 +27,13 @@ public class App {
 //        obj2.drive();
 
         // Using Annotation Based Configuration
-        Vehicle obj3 = (Vehicle) context.getBean("car");
-        obj3.drive();
+//        Vehicle obj3 = (Vehicle) context.getBean("car");
+//        obj3.drive();
+
+        Tyre t = (Tyre) context.getBean("tyr");
+        System.out.println(t);
+
+        Gate g = (Gate) context.getBean("gat");
+        System.out.println(g);
     }
 }
