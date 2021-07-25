@@ -30,10 +30,10 @@ public class App {
 //        Vehicle obj3 = (Vehicle) context.getBean("car");
 //        obj3.drive();
 
-        Tyre t = (Tyre) context.getBean("tyr");
+        Tyre t = (Tyre) context.getBean("tyre");
         System.out.println(t);
 
-        Gate g = (Gate) context.getBean("gat");
-        System.out.println(g);
+//        Gate g = (Gate) context.getBean("gat");
+//        System.out.println(g);
     }
 }
