@@ -21,9 +21,13 @@ public class App {
         // Using Spring Bean
         ApplicationContext context = new ClassPathXmlApplicationContext("com/example/telusko/config.xml");
 
-        Vehicle obj1 = (Vehicle) context.getBean("vehicle1");
-        Vehicle obj2 = (Vehicle) context.getBean("vehicle2");
-        obj1.drive();
-        obj2.drive();
+//        Vehicle obj1 = (Vehicle) context.getBean("vehicle1");
+//        Vehicle obj2 = (Vehicle) context.getBean("vehicle2");
+//        obj1.drive();
+//        obj2.drive();
+
+        // Using Annotation Based Configuration
+        Vehicle obj3 = (Vehicle) context.getBean("car");
+        obj3.drive();
     }
 }
