@@ -1,6 +1,9 @@
 package com.example.telusko;
 
-public class Bike implements Vehicle{
+import org.springframework.stereotype.Component;
+
+@Component
+public class Bike implements Vehicle {
     public void drive() {
         System.out.println("Bike Bhaag Rahi Hai..");
     }
