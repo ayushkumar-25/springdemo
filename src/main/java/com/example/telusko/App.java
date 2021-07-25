@@ -11,19 +11,19 @@ public class App {
         // Normal way of creating object
         Car car = new Car();
         Bike bike = new Bike();
-        car.drive();
-        bike.drive();
+//        car.drive();
+//        bike.drive();
 
         // Using Interface and implement method
         Vehicle vehicle = new Car();
-        vehicle.drive();
+//        vehicle.drive();
 
         // Using Spring Bean
         ApplicationContext context = new ClassPathXmlApplicationContext("com/example/telusko/config.xml");
 
-        Vehicle obj = (Vehicle) context.getBean("vehicle1");
+        Vehicle obj1 = (Vehicle) context.getBean("vehicle1");
         Vehicle obj2 = (Vehicle) context.getBean("vehicle2");
-        obj.drive();
+        obj1.drive();
         obj2.drive();
     }
 }
